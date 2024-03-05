@@ -8,8 +8,7 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { Role } from "@/types/globals";
 import { NavConfig } from "@/types/nav";
-import { defaultNavConfig } from "@/config/nav/default-nav-links";
-import { adminNavConfig } from "@/config/nav/admin-nav-links";
+import { getNavConfig } from "@/config/nav/nav-links";
 
 interface MainNavProps {
   userId: string | null;
@@ -18,10 +17,7 @@ interface MainNavProps {
 export function MainNav({ userId, role }: MainNavProps) {
   const pathname = usePathname();
 
-  let navConfig: NavConfig = defaultNavConfig;
-  if (userId && role === "admin") {
-    navConfig = adminNavConfig;
-  }
+  let navConfig: NavConfig = getNavConfig(userId, role);
 
   return (
     <div className="mr-4 hidden md:flex">

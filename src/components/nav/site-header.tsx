@@ -1,7 +1,7 @@
-import { CommandMenu } from "@/components/command-menu";
-import { MainNav } from "@/components/nav/main-nav/main-nav";
-import { MobileNav } from "@/components/nav/main-nav/mobile-nav";
-import { ModeToggle } from "@/components/mode-toggle";
+import { CommandMenu } from "@/components/nav/command-menu";
+import { MainNav } from "@/components/nav/main-nav";
+import { MobileNav } from "@/components/nav/mobile-nav";
+import { ModeToggle } from "@/components/misc/mode-toggle";
 import { SignInButton, UserButton, auth } from "@clerk/nextjs";
 
 export function SiteHeader() {

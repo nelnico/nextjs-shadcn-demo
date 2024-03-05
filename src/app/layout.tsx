@@ -1,12 +1,12 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 
-import { Analytics } from "@/components/analytics";
-import { ThemeProvider } from "@/components/providers";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
-import { TailwindIndicator } from "@/components/tailwind-indicator";
-import { ThemeSwitcher } from "@/components/theme-switcher";
+import { Analytics } from "@/components/misc/analytics";
+import { ThemeProvider } from "@/components/misc/providers";
+import { SiteFooter } from "@/components/nav/site-footer";
+import { SiteHeader } from "@/components/nav/site-header";
+import { TailwindIndicator } from "@/components/misc/tailwind-indicator";
+import { ThemeSwitcher } from "@/components/misc/theme-switcher";
 import { Toaster } from "@/components/ui/toaster";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/lib/fonts";

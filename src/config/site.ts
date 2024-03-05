@@ -1,10 +1,10 @@
 export const siteConfig = {
-  name: 'luvr',
-  url: 'https://www/luver.co.za',
-  ogImage: 'https://www/luvr.co.za',
-  description: 'todo: site description.',
+  name: "lenocin",
+  url: "https://www/lenocin.co.za",
+  ogImage: "https://www/lenocin.co.za",
+  description: "todo: site description.",
   links: {
-    twitter: 'https://twitter.com/luvrcoza',
+    twitter: "https://twitter.com/lenocin",
   },
 };
 

@@ -1,6 +1,6 @@
 import { NavConfig } from "@/types/nav";
 
-export const adminNavConfig: NavConfig = {
+export const venueNavConfig: NavConfig = {
   mainNav: [
     {
       title: "Dashboard",
@@ -9,7 +9,7 @@ export const adminNavConfig: NavConfig = {
   ],
   sidebarNav: [
     {
-      title: "Other Admin Stuff",
+      title: "Other Venue Stuff",
       items: [
         {
           title: "Introduction",
@@ -19,7 +19,7 @@ export const adminNavConfig: NavConfig = {
       ],
     },
     {
-      title: "More Admin Stuff",
+      title: "More Venue Stuff",
       items: [
         {
           title: "More things",
