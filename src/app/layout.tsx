@@ -1,7 +1,5 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-
-import { Analytics } from "@/components/misc/analytics";
 import { ThemeProvider } from "@/components/misc/providers";
 import { SiteFooter } from "@/components/nav/site-footer";
 import { SiteHeader } from "@/components/nav/site-header";
@@ -63,7 +61,6 @@ export const metadata: Metadata = {
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-  manifest: `${siteConfig.url}/site.webmanifest`,
 };
 
 export const viewport: Viewport = {
@@ -101,13 +98,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <div vaul-drawer-wrapper="">
               <div className="relative flex min-h-screen flex-col bg-background">
                 <SiteHeader />
-                <main className="flex-1 p-2">{children}</main>
+                <main className=" mt-2 container">{children}</main>
                 <SiteFooter />
               </div>
             </div>
             <TailwindIndicator />
             <ThemeSwitcher />
-            <Analytics />
             <Toaster />
           </ThemeProvider>
         </body>

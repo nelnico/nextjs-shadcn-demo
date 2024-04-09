@@ -12,7 +12,7 @@ const AdminDashboardLayout = ({ children }: AdminDashboardLayoutProps) => {
 
   return (
     <>
-      <h1>Admin Dashboard Layout</h1>
+      {/* <h1>Admin Dashboard Layout</h1> */}
       {children}
     </>
   );

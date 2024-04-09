@@ -19,3 +19,10 @@ const configAtom = atomWithStorage<Config>("config", {
 export function useConfig() {
   return useAtom(configAtom)
 }
+
+
+
+function foo(inputNumber: number, multiple: number) {
+  const result = inputNumber * multiple;
+  return result.toExponential.toString();
+}

@@ -6,6 +6,10 @@ export const adminNavConfig: NavConfig = {
       title: "Dashboard",
       href: "/dashboard",
     },
+    {
+      title: "Inbox",
+      href: "/dashboard/admin/inbox",
+    },
   ],
   sidebarNav: [
     {

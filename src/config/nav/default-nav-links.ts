@@ -10,6 +10,10 @@ export const defaultNavConfig: NavConfig = {
       title: "Contact Us",
       href: "/contact",
     },
+    {
+      title: "Demos",
+      href: "/demos",
+    },
   ],
   sidebarNav: [
     {
